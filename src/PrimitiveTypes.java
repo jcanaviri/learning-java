@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PrimitiveTypes {
     public static void main(String[] args) {
         // Byte type
@@ -45,9 +47,25 @@ public class PrimitiveTypes {
         System.out.println("My character decimal: " + myCharacterDecimal);
 
         // Boolean type
-        boolean isAdult = false;
-        boolean hasAccess = true;
-        boolean canModify = false;
+        boolean isAdult;
+        boolean hasAccess;
+        boolean canModify;
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Is an adult?: ");
+        isAdult = sc.nextBoolean();
+
+        System.out.print("Has access?: ");
+        hasAccess = sc.nextBoolean();
+
+        System.out.print("Can modify?: ");
+        canModify= sc.nextBoolean();
+
+        if (isAdult && hasAccess && canModify)
+            System.out.println("All values are true");
+        else
+            System.out.println("At least one value is false");
 
         // Type casting
         String ageString = "25";
@@ -62,7 +80,7 @@ public class PrimitiveTypes {
         String numberToText = String.valueOf(10);
         System.out.println("numberToText = " + numberToText);
 
-        char firstChart = "Hello".charAt(0);
+        char firstChart = ageString.charAt(0);
         System.out.println("firstChart = " + firstChart);
     }
 }
