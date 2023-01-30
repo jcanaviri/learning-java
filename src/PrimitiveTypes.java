@@ -51,7 +51,11 @@ public class PrimitiveTypes {
 
         // Type casting
         String ageString = "25";
+        // This line will result as a:
+        // -> The next year you will be 251 years old.
         System.out.println("The next year you will be " + (ageString + 1) + " years old.");
+        // Now casting the type to an integer we can apply the addition operation like this:
+        // -> The next year you will be 26 years old.
         int age = Integer.parseInt(ageString);
         System.out.println("The next year you will be " + (age + 1) + " years old.");
 
