@@ -11,8 +11,5 @@ public class TypeInference {
         // isAvailable = "Jose";
         isAvailable = false;
         System.out.println(isAvailable);
-
-        var name = "Josue";
-        System.out.println(name);
     }
 }

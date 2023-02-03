@@ -1,5 +1,7 @@
 package basics;
 
+import java.util.Scanner;
+
 public class Operators {
     public static void main(String[] args) {
         int a = 4, b = 3;
@@ -18,8 +20,11 @@ public class Operators {
         System.out.println("a = " + a);
 
         String myFirstString = "Hello";
-        String mySecondString = "Hello";
 
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Gimme the second string: ");
+        String mySecondString = sc.nextLine();
+        sc.close();
         System.out.println(myFirstString == mySecondString);
         System.out.println(myFirstString.equals(mySecondString));
 
