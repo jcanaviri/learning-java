@@ -5,6 +5,11 @@ public class Employee extends Person {
     private int idEmployee;
     private double salary;
 
+    // Overloading the constructor
+    public Employee() {
+        this.idEmployee = ++Employee.employeeCounter;
+    }
+
     public Employee(String name, double salary) {
         super(name);
         this.idEmployee = ++Employee.employeeCounter;

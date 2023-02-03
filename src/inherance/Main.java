@@ -7,5 +7,17 @@ public class Main {
 
         Customer tommy = new Customer("Tommy", 'M', 18, "Oak #123", false);
         System.out.println("tommy = " + tommy);
+
+        System.out.println("add(2, 4) = " + add(2, 4));
+        System.out.println("add(2.5, 4.5) = " + add(2.5, 4.5));
+        System.out.println("add(2, 4L) = " + add(2, 4L));
+    }
+
+    // Examples of overload in functions
+    public static int add(int a, int b) {
+        return a + b;
+    }
+    public static double add(double a, double b) {
+        return a + b;
     }
 }
