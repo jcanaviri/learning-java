@@ -1,6 +1,5 @@
 package arrays;
 
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,7 +30,7 @@ public class Main {
         names.add("John");
         System.out.println("names = " + names);
 
-        List<Customer> customerList1 = new ArrayList<Customer>();
+        List<Customer> customerList1 = new ArrayList<>();
         customerList1.add(new Customer("Johnathan"));
         customerList1.add(new Customer("Diana"));
 

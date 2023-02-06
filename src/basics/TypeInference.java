@@ -1,7 +1,5 @@
 package basics;
 
-import java.util.Scanner;
-
 public class TypeInference {
     public static void main(String[] args) {
         var isAvailable = true;

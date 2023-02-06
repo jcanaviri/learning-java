@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.StringJoiner;
+
 public class Customer {
     private String name;
 
@@ -17,9 +19,8 @@ public class Customer {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Customer{");
-        sb.append("name='").append(name).append('\'');
-        sb.append('}');
-        return sb.toString();
+        return new StringJoiner(", ", Customer.class.getSimpleName() + "[", "]")
+                .add("name='" + name + "'")
+                .toString();
     }
 }
