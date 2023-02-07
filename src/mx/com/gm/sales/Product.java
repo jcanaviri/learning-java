@@ -1,10 +1,10 @@
 package mx.com.gm.sales;
 
 public class Product {
+    private static int productCounter;
     private final int productId;
     private String name;
     private double price;
-    private static int productCounter;
 
     private Product() {
         this.productId = ++Product.productCounter;

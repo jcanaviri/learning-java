@@ -3,11 +3,11 @@ package mx.com.gm.sales;
 import java.util.Arrays;
 
 public class Order {
-    private final int orderId;
-    private Product[] products;
-    private static int orderCounter;
-    private int productCounter;
     private static final int MAX_PRODUCTS = 10;
+    private static int orderCounter;
+    private final int orderId;
+    private final Product[] products;
+    private int productCounter;
 
     public Order() {
         this.orderId = ++Order.orderCounter;
@@ -29,12 +29,11 @@ public class Order {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Order {");
-        sb.append("\n\torderId = ").append(orderId);
-        sb.append("\n\t, total order = ").append(this.getTotal());
-        sb.append("\n\t, products = ").append(Arrays.toString(products));
-        sb.append("\n\t, productCounter = ").append(productCounter);
-        sb.append("\n}");
-        return sb.toString();
+        String sb = "Order {" + "\n\torderId = " + orderId +
+                "\n\t, total order = " + this.getTotal() +
+                "\n\t, products = " + Arrays.toString(products) +
+                "\n\t, productCounter = " + productCounter +
+                "\n}";
+        return sb;
     }
 }
