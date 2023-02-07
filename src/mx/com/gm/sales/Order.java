@@ -22,13 +22,9 @@ public class Order {
     }
 
     public double getTotal() {
-        double total = 0;
-
-        for (int i = 0; i < this.productCounter; i++) {
-            total += this.products[i].getPrice();
-        }
-
-        return total;
+        return Arrays.stream(this.products, 0, this.productCounter)
+                .mapToDouble(Product::getPrice)
+                .sum();
     }
 
     @Override
