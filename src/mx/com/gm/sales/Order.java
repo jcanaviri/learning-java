@@ -3,7 +3,7 @@ package mx.com.gm.sales;
 import java.util.Arrays;
 
 public class Order {
-    private static final int MAX_PRODUCTS = 10;
+    private static final int MAX_PRODUCTS = 5;
     private static int orderCounter;
     private final int orderId;
     private final Product[] products;
