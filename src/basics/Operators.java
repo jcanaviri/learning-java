@@ -24,12 +24,17 @@ public class Operators {
         Scanner sc = new Scanner(System.in);
         System.out.print("Gimme the second string: ");
         String mySecondString = sc.nextLine();
-        sc.close();
-        System.out.println(myFirstString == mySecondString);
+
+        // The code commented is a valid way to compare things
+        // but the method .equals() is more recommended.
+        // System.out.println(myFirstString == mySecondString);
         System.out.println(myFirstString.equals(mySecondString));
 
         // The ternary operator
-        String result = (3 > 2) ? "yes" : "no";
+        System.out.print("The boolean value should be true or false: ");
+        boolean isValid = sc.nextBoolean();
+        String result = isValid ? "yes" : "no";
         System.out.println(result);
+        sc.close();
     }
 }

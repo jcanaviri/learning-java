@@ -11,5 +11,12 @@ public class Main {
 
         System.out.println("john name = " + john.getName());
         System.out.println(john);
+
+        System.out.println("john salary = " + john.getSalary());
+        john.setSalary(10000);
+        System.out.println("john salary = " + john.getSalary());
+
+        john.setDeleted(false);
+        System.out.println("john is deleted = " + john.isDeleted());
     }
 }

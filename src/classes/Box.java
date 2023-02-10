@@ -6,9 +6,11 @@ public class Box {
     public int deep;
 
     public Box() {
+        System.out.println("Box Constructor Running");
     }
 
     public Box(int height, int width, int deep) {
+        this();
         this.height = height;
         this.width = width;
         this.deep = deep;
