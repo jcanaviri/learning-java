@@ -2,7 +2,7 @@ package staticcontext;
 
 public class Person {
     private static int personCounter;
-    private int personId;
+    private final int personId;
     private String name;
 
     public Person(String name) {
@@ -13,22 +13,6 @@ public class Person {
 
         // set the person id
         this.personId = Person.personCounter;
-    }
-
-    public static int getPersonCounter() {
-        return personCounter;
-    }
-
-    public static void setPersonCounter(int personCounter) {
-        Person.personCounter = personCounter;
-    }
-
-    public int getPersonId() {
-        return personId;
-    }
-
-    public void setPersonId(int personId) {
-        this.personId = personId;
     }
 
     public String getName() {
@@ -42,8 +26,8 @@ public class Person {
     @Override
     public String toString() {
         return "Person{" +
-                "personId=" + personId +
-                ", name='" + name + '\'' +
+                "personId=" + this.personId +
+                ", name='" + this.name + '\'' +
                 '}';
     }
 }

@@ -6,6 +6,7 @@ public class Main {
         showNumbers(17, 22);
 
         manyParams("Josue", 5, 4, 3);
+        manyParams("Samanta", 3, 2, 1);
     }
 
     private static void manyParams(String name, int... numbers) {
