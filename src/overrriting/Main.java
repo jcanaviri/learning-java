@@ -12,5 +12,12 @@ public class Main {
         System.out.println(german.getDepartment());
 
         System.out.println(german.getDetails());
+
+        // Instance of
+        Employee jack = new Employee("Jack", 200);
+
+        // Determinate the type
+        System.out.println(jack instanceof Employee); // true
+        System.out.println(jack instanceof Object);  // true
     }
 }
