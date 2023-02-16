@@ -1,5 +1,6 @@
 package mx.com.gm.sales;
 
+@SuppressWarnings("unused")
 public class Product {
     private static int productCounter;
     private final int productId;

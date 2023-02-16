@@ -2,6 +2,7 @@ package inherance;
 
 import java.util.Date;
 
+@SuppressWarnings("unused")
 public class Customer extends Person {
     private static int customerCounter;
 
@@ -42,12 +43,10 @@ public class Customer extends Person {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Customer{");
-        sb.append("idCustomer=").append(idCustomer);
-        sb.append(", registerDate=").append(registerDate);
-        sb.append(", isVip=").append(isVip);
-        sb.append(", ").append(super.toString());
-        sb.append('}');
-        return sb.toString();
+        return "Customer{" + "idCustomer=" + idCustomer +
+                ", registerDate=" + registerDate +
+                ", isVip=" + isVip +
+                ", " + super.toString() +
+                '}';
     }
 }

@@ -1,6 +1,7 @@
 package finalkeyword;
 
 // This class can't be inheritance from any other class
+@SuppressWarnings("unused")
 public final class FinalClass {
     // This is basically a constant in Java
     public final static int MY_CONSTANT = 3600;

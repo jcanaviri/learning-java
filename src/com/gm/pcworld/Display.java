@@ -1,5 +1,6 @@
 package com.gm.pcworld;
 
+@SuppressWarnings("unused")
 public class Display {
     private final int displayId;
     private String mark;

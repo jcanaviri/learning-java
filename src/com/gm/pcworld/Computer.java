@@ -1,5 +1,6 @@
 package com.gm.pcworld;
 
+@SuppressWarnings("unused")
 public class Computer {
     private final int computerId;
     private String name;

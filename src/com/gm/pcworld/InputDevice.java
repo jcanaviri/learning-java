@@ -1,5 +1,6 @@
 package com.gm.pcworld;
 
+@SuppressWarnings("unused")
 public class InputDevice {
     private String inputType;
     private String mark;

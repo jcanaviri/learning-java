@@ -1,5 +1,6 @@
 package com.gm.pcworld;
 
+@SuppressWarnings("unused")
 public class Mouse extends InputDevice {
     private final int mouseId;
 

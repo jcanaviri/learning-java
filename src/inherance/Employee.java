@@ -1,5 +1,6 @@
 package inherance;
 
+@SuppressWarnings("unused")
 public class Employee extends Person {
     private static int employeeCounter;
     private int idEmployee;
@@ -34,11 +35,9 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Employee{");
-        sb.append("idEmployee=").append(idEmployee);
-        sb.append(", salary=").append(salary);
-        sb.append(", ").append(super.toString());
-        sb.append('}');
-        return sb.toString();
+        return "Employee{" + "idEmployee=" + idEmployee +
+                ", salary=" + salary +
+                ", " + super.toString() +
+                '}';
     }
 }

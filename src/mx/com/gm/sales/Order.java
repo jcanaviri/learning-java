@@ -29,11 +29,10 @@ public class Order {
 
     @Override
     public String toString() {
-        String sb = "Order {" + "\n\torderId = " + orderId +
+        return "Order {" + "\n\torderId = " + orderId +
                 "\n\t, total order = " + this.getTotal() +
                 "\n\t, products = " + Arrays.toString(products) +
                 "\n\t, productCounter = " + productCounter +
                 "\n}";
-        return sb;
     }
 }
