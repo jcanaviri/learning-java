@@ -10,7 +10,7 @@ public class Dog {
         ++Dog.dogCounter;
     }
 
-    // This runs second
+    // This every time an instance in created
     {
         System.out.println("non-static block");
         this.dogId = Dog.dogCounter++;

@@ -1,5 +1,6 @@
 package inherance;
 
+@SuppressWarnings("unused")
 public class Person {
     protected String name;
     protected char genre;

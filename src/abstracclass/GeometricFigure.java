@@ -1,5 +1,6 @@
 package abstracclass;
 
+@SuppressWarnings("unused")
 public abstract class GeometricFigure {
     protected String figureType;
 

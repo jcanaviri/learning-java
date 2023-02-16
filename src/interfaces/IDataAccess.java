@@ -1,5 +1,6 @@
 package interfaces;
 
+@SuppressWarnings("unused")
 public interface IDataAccess {
     // This is set as a constant
     int MAX_REGISTERS = 10;
