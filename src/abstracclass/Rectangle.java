@@ -1,5 +1,6 @@
 package abstracclass;
 
+@SuppressWarnings("unused")
 public class Rectangle extends GeometricFigure {
     public Rectangle(String figureType) {
         super(figureType);

@@ -2,6 +2,7 @@ package arrays;
 
 import java.util.StringJoiner;
 
+@SuppressWarnings("unused")
 public class Customer {
     private String name;
 

@@ -1,5 +1,6 @@
 package staticcontext;
 
+@SuppressWarnings("unused")
 public class Person {
     private static int personCounter;
     private final int personId;

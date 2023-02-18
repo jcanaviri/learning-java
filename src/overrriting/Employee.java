@@ -1,5 +1,6 @@
 package overrriting;
 
+@SuppressWarnings("unused")
 public class Employee {
     protected String name;
     protected double salary;
