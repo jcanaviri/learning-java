@@ -70,7 +70,7 @@ public class DataAccessImp implements IDataAccess {
             int index = 1;
 
             while (line != null && look != null) {
-                if (look.equals(line))
+                if (look.equalsIgnoreCase(line))
                     return "Found at index: " + index;
 
                 // goes to the next line in the file

@@ -23,7 +23,7 @@ public class MoviesService implements IMovies {
 
         try {
             if (this.db.isAlreadyRegistered(FILENAME))
-                this.db.write(movie, FILENAME, false);
+                this.db.write(movie, FILENAME, true);
         } catch (DataAccessEx e) {
             throw new RuntimeException(e);
         }
