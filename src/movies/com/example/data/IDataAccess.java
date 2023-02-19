@@ -9,15 +9,15 @@ import java.util.List;
 
 @SuppressWarnings("unused")
 public interface IDataAccess {
-    boolean isAlreadyRegistered(String resourceName) throws DataAccessEx;
+    boolean isAlreadyRegistered(String filename) throws DataAccessEx;
 
-    List<Movie> getAll(String resourceName) throws ReadDataEx;
+    List<Movie> getAll(String filename) throws ReadDataEx;
 
-    void write(Movie movie, String resourceName, boolean isAppend) throws WriteDataEx;
+    void write(Movie movie, String filename, boolean isAppend) throws WriteDataEx;
 
-    String search(String resourceName, String look) throws ReadDataEx;
+    String search(String filename, String look) throws ReadDataEx;
 
-    void insert(String resourceName) throws DataAccessEx;
+    void insert(String filename) throws DataAccessEx;
 
-    void delete(String resourceName) throws DataAccessEx;
+    void delete(String filename) throws DataAccessEx;
 }
