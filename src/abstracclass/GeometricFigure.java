@@ -8,6 +8,7 @@ public abstract class GeometricFigure {
         this.figureType = figureType;
     }
 
+    // This method should be implemented by the classes that inherit from it
     public abstract void draw();
 
     public String getFigureType() {
