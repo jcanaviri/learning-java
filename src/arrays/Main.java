@@ -12,6 +12,7 @@ public class Main {
         ages[0] = 10;
         ages[1] = 20;
         ages[2] = 23;
+
         // Using forEach
         Arrays.stream(ages).forEach(System.out::println);
 

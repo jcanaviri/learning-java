@@ -20,7 +20,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Customer.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", Customer.class.getSimpleName() + "{", "}")
                 .add("name='" + name + "'")
                 .toString();
     }
