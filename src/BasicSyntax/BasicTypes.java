@@ -1,8 +1,6 @@
-package basics;
+package BasicSyntax;
 
-import java.util.Scanner;
-
-public class Main {
+public class BasicTypes {
     public static void main(String[] args) {
         // Declaring an integer variable
         int myIntegerVariable = 42;
@@ -39,13 +37,5 @@ public class Main {
         System.out.println("Your name is: \n" + user);
         System.out.println("Your name is: \t" + user);
         System.out.println("Your name is: \b\b" + user);
-
-        // Scanner
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Please write your name: ");
-        user = sc.nextLine();
-        System.out.println("So you are the user: " + user);
-
-        sc.close();
     }
 }
