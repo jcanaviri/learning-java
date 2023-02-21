@@ -2,6 +2,7 @@ package files;
 
 import java.io.*;
 
+@SuppressWarnings("unused")
 public class Main {
     public static void main(String[] args) {
         String filename = "hello.txt";
@@ -53,7 +54,7 @@ public class Main {
         try {
             // Opening the file
             // The class FileWriter with a true value will append the content to the file
-            PrintWriter output = new PrintWriter(new FileWriter(filename, true));
+            PrintWriter output = new PrintWriter(new FileWriter(newFile, true));
 
             output.println(content);
 

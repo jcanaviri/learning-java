@@ -1,4 +1,4 @@
-package BasicSyntax;
+package basicSyntax;
 
 import java.util.Scanner;
 

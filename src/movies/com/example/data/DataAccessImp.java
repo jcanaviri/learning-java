@@ -100,7 +100,7 @@ public class DataAccessImp implements IDataAccess {
     }
 
     @Override
-    public void delete(String filename) {
+    public void delete(String filename) throws DataAccessEx {
         // Deletes the file from the disk
         File file = new File(filename);
         // canDelete tell us if the file exists or no
@@ -108,7 +108,9 @@ public class DataAccessImp implements IDataAccess {
         // if file exists, we can delete it
         boolean isDeleted = canDelete && file.delete();
 
-        String message = isDeleted ? "The file has been deleted" : "Could not delete";
-        System.out.println(message);
+        if (isDeleted)
+            System.out.println("The file has been deleted");
+        else
+            throw new DataAccessEx("Exception to read the data");
     }
 }

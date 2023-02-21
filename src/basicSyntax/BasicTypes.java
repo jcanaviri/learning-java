@@ -1,4 +1,4 @@
-package BasicSyntax;
+package basicSyntax;
 
 public class BasicTypes {
     public static void main(String[] args) {

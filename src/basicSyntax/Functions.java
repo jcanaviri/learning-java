@@ -1,6 +1,4 @@
-package BasicSyntax;
-
-import java.util.Arrays;
+package basicSyntax;
 
 public class Functions {
     public static void main(String[] args) {
@@ -10,7 +8,7 @@ public class Functions {
 
         System.out.println("\nFactorial(5) = " + factorial(5));
 
-        System.out.println("The reversed word of \"Canaviri\" is: " + reverseWord("Canaviri"));
+        System.out.println("The reversed word of \"Clothes\" is: " + reverseWord("Clothes"));
 
         int[] array = {1, 2, 3, 4, 5};
         System.out.println(secondLargest(array)); // Output: 4

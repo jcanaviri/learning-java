@@ -9,7 +9,7 @@ import java.util.List;
 
 @SuppressWarnings("unused")
 public interface IDataAccess {
-    boolean isAlreadyRegistered(String filename) throws DataAccessEx;
+    boolean isAlreadyRegistered(String filename);
 
     List<Movie> getAll(String filename) throws ReadDataEx;
 
