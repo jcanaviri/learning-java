@@ -59,4 +59,13 @@ public class MoviesService implements IMovies {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public void deleteMovies() {
+        try {
+            this.db.delete(FILENAME);
+        } catch (DataAccessEx e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

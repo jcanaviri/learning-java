@@ -11,4 +11,6 @@ public interface IMovies {
     void searchMovie(String movieName);
 
     void startMovieDatabase();
+
+    void deleteMovies();
 }

@@ -40,6 +40,7 @@ public class Main {
                     movies.searchMovie(searchName);
                     break;
                 case 0:
+                    movies.deleteMovies();
                     System.out.println("Bye bye!");
                     break;
                 default:

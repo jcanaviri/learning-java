@@ -22,7 +22,7 @@ public class UserInput {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.print("\nEnter your age: ");
-        String ageString = null;
+        String ageString;
         try {
             ageString = reader.readLine();
         } catch (IOException e) {

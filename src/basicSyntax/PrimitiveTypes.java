@@ -62,7 +62,7 @@ public class PrimitiveTypes {
         hasAccess = sc.nextBoolean();
 
         System.out.print("Can modify?: ");
-        canModify= sc.nextBoolean();
+        canModify = sc.nextBoolean();
 
         if (isAdult && hasAccess && canModify)
             System.out.println("All values are true");
