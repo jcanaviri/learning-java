@@ -16,6 +16,7 @@ public class Manager extends Employee {
         this.department = department;
     }
 
+    // * Here we apply the overwriting
     @Override
     public String getDetails() {
         return super.getDetails() + ", department = " + this.department;

@@ -1,5 +1,7 @@
 package varargs;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         showNumbers(1, 2, 3, 4);
@@ -15,8 +17,7 @@ public class Main {
     }
 
     private static void showNumbers(int... numbers) {
-        for (int number : numbers) {
-            System.out.println(number);
-        }
+        Arrays.stream(numbers)
+                .forEach(System.out::println);
     }
 }

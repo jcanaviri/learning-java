@@ -31,7 +31,7 @@ public class _Stream {
         boolean hasOnlyFemales = people.stream()
                 .allMatch(person -> Gender.FEMALE.equals(person.gender));
 
-        System.out.println("The list contains only females: " + hasOnlyFemales);
+        System.out.println("The list contains only females: " + hasOnlyFemales);  // -> false
     }
 
     enum Gender {

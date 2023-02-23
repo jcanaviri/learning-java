@@ -15,9 +15,13 @@ public class Main {
 
         // Instance of
         Employee jack = new Employee("Jack", 200);
+        System.out.println("jack = " + jack);
 
-        // Determinate the type
-        System.out.println(jack instanceof Employee); // true
-        System.out.println(jack instanceof Object);  // true
+        // * Determinate the type with instanceof
+        // System.out.println(jack instanceof Employee);
+        // -> true
+
+        // System.out.println(jack instanceof Object);
+        // -> true
     }
 }
