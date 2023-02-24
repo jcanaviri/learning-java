@@ -1,50 +1,44 @@
 package dataStructures;
 
-import java.util.Arrays;
+import java.util.EmptyStackException;
 
 @SuppressWarnings("unused")
-public class Stack {
-    private final int[] items;
-    private int top;
-    private final static int MAX_SIZE = 10;
+public class Stack<T> {
+    private Node<T> top;
+    private int size;
 
     public Stack() {
-        this.items = new int[MAX_SIZE];
     }
 
     public boolean isEmpty() {
-        return top == -1;
-    }
-    
-    public void push(int value) {
-        if (top == this.items.length - 1)
-            throw new RuntimeException("Stack is full");
-        top++;
-        this.items[top] = value;
-    }
-
-    public int pop() {
-        if (this.isEmpty())
-            throw  new RuntimeException("Stack is full");
-        int value = this.items[top];
-        top--;
-        return value;
-    }
-
-    public int peek() {
-        if (isEmpty()) {
-            throw new RuntimeException("Stack is empty");
-        }
-        return this.items[top];
+        return this.size == 0;
     }
 
     public int size() {
-        return top + 1;
+        return this.size;
     }
 
-    @Override
-    public String toString() {
-        return "Stack{" + "items=" + Arrays.toString(this.items) +
-                '}';
+    public void push(T data) {
+        Node<T> newNode = new Node<>(data);
+        newNode.next = this.top;
+        this.top = newNode;
+        this.size++;
     }
+
+    public T pop() {
+        if (this.isEmpty())
+            throw new EmptyStackException();
+        T value = this.top.data;
+        this.top = this.top.next;
+        this.size--;
+
+        return value;
+    }
+
+    public T peek() {
+        if (this.isEmpty())
+            throw new EmptyStackException();
+        return this.top.data;
+    }
+
 }
