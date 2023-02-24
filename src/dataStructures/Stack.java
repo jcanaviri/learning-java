@@ -41,4 +41,18 @@ public class Stack<T> {
         return this.top.data;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder stack = new StringBuilder();
+        stack.append("[TOP | ").append(this.top.data).append("] -> ");
+
+        Node<T> currentNode = this.top;
+        while (currentNode.next != null) {
+            stack.append("[").append(currentNode.data).append("] -> ");
+            currentNode = currentNode.next;
+        }
+        stack.append("[").append(currentNode.data).append("] -> ");
+
+        return String.valueOf(stack);
+    }
 }
