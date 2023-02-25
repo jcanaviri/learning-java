@@ -10,6 +10,7 @@ public class Stack<T> {
     public Stack() {
     }
 
+    // Returns true if the size is 0
     public boolean isEmpty() {
         return this.size == 0;
     }
@@ -18,6 +19,7 @@ public class Stack<T> {
         return this.size;
     }
 
+    // Adds a new element in the stack
     public void push(T data) {
         Node<T> newNode = new Node<>(data);
         newNode.next = this.top;
@@ -25,6 +27,7 @@ public class Stack<T> {
         this.size++;
     }
 
+    // Deletes the top of the stack
     public T pop() {
         if (this.isEmpty())
             throw new EmptyStackException();
@@ -35,6 +38,7 @@ public class Stack<T> {
         return value;
     }
 
+    // Takes the element in the top of the stack
     public T peek() {
         if (this.isEmpty())
             throw new EmptyStackException();
