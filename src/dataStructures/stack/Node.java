@@ -1,4 +1,4 @@
-package dataStructures;
+package dataStructures.stack;
 
 @SuppressWarnings("unused")
 public class Node<T> {
