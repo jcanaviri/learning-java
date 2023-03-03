@@ -2,8 +2,8 @@ package abstracclass;
 
 @SuppressWarnings("unused")
 public class Rectangle extends GeometricFigure {
-    public int a;
-    public int b;
+    public final int a;
+    public final int b;
 
     public Rectangle(String figureType, int a, int b) {
         super(figureType);
