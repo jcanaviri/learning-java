@@ -11,6 +11,10 @@ public abstract class GeometricFigure {
     // This method should be implemented by the classes that inherit from it
     public abstract void draw();
 
+    public abstract float getPerimeter();
+
+    public abstract float getArea();
+
     public String getFigureType() {
         return figureType;
     }
