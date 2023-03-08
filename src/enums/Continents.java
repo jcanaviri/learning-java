@@ -1,11 +1,8 @@
 package enums;
 
 public enum Continents {
-    AMERICA(34),
-    AFRICA(53),
-    EUROPE(46),
-    ASIA(44),
-    OCEAN(14);
+
+    AMERICA(34), AFRICA(53), EUROPE(46), ASIA(44), OCEAN(14);
 
     private final int countries;
 
@@ -16,4 +13,5 @@ public enum Continents {
     public int getCountries() {
         return this.countries;
     }
+
 }

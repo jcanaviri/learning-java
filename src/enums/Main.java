@@ -14,7 +14,7 @@ public class Main {
             System.out.print(day + " ");
         }
 
-        System.out.println("\nAll the continents in the world:");
+        System.out.println("\n\nAll the continents in the world:");
         for (Continents continent : Continents.values()) {
             System.out.print(continent + " ");
         }
