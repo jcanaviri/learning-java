@@ -31,6 +31,7 @@ public class Stack<T> {
     public T pop() {
         if (this.isEmpty())
             throw new EmptyStackException();
+
         T value = this.top.data;
         this.top = this.top.next;
         this.size--;
@@ -42,6 +43,7 @@ public class Stack<T> {
     public T peek() {
         if (this.isEmpty())
             throw new EmptyStackException();
+
         return this.top.data;
     }
 
