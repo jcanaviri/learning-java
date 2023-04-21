@@ -108,6 +108,7 @@ public class DataAccessImp implements IDataAccess {
         // if file exists, we can delete it
         boolean isDeleted = canDelete && file.delete();
 
+        // Print the correct message if was or not deleted
         if (isDeleted)
             System.out.println("The file has been deleted");
         else

@@ -2,7 +2,6 @@ package imperativevsdeclarative;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,7 +31,7 @@ public class Main {
         System.out.println("\nDeclarative way");
         people.stream()  // Stream allow us to use functional programming
                 .filter(person -> Gender.FEMALE.equals(person.gender))  // A single condition
-                .collect(Collectors.toList())  // Convert to a List
+                .toList()  // Convert to a List
                 .forEach(System.out::println);  // for every item in the list apply this function
     }
 
