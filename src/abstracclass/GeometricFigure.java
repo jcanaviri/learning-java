@@ -1,5 +1,8 @@
 package abstracclass;
 
+// An abstrac class define methods that should be implemented
+// by the classes that inherit from the class
+
 @SuppressWarnings("unused")
 public abstract class GeometricFigure {
     protected String figureType;
@@ -8,7 +11,7 @@ public abstract class GeometricFigure {
         this.figureType = figureType;
     }
 
-    // This method should be implemented by the classes that inherit from it
+    // This method should be implemented by the classes that inherit from GeometricFigure
     public abstract void draw();
 
     public abstract float getPerimeter();

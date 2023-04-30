@@ -1,5 +1,8 @@
 package abstracclass;
 
+// Rectangle inherits from GeometricFigure
+// that means this class should be implement the abstract methods
+
 @SuppressWarnings("unused")
 public class Rectangle extends GeometricFigure {
     public final int a;
