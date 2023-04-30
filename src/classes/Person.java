@@ -7,9 +7,11 @@ public class Person {
     String name;
     String lastName;
 
+    // An empty constructor
     public Person() {
     }
 
+    // A constructor with params
     public Person(String name, String lastName) {
         this.name = name;
         this.lastName = lastName;

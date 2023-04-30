@@ -5,7 +5,7 @@ public class TestEquals {
         Person p1 = new Person("John", "Snow");
         Person p2 = new Person("John", "Snow");
 
-        // * When I use == to compare the compilation throws a warning
+        // * When we use '==' to compare the compilation throws a warning
 
         if (p1.equals(p2))
             System.out.println("Equals using .equals()");
