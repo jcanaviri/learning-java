@@ -1,6 +1,6 @@
 package varargs;
 
-import java.util.Arrays;
+import static java.util.Arrays.stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class Main {
 
     // Prints all the given numbers
     private static void showNumbers(int... numbers) {
-        Arrays.stream(numbers)
-                .forEach(System.out::print);
+        // This is a shortcut to Arrays.stream(...)
+        stream(numbers).forEach(System.out::print);
     }
 }
