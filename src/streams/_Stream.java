@@ -10,8 +10,7 @@ public class _Stream {
                 new Person("Dave", Gender.MALE),
                 new Person("Susan", Gender.FEMALE),
                 new Person("Alex", Gender.PREFER_NOT_TO_SAY),
-                new Person("Jeffrey", Gender.MALE)
-        );
+                new Person("Jeffrey", Gender.MALE));
 
         // The double :: is called "method reference"
         // it's just a syntactic sugar for expressions like this:
@@ -31,27 +30,13 @@ public class _Stream {
         boolean hasOnlyFemales = people.stream()
                 .allMatch(person -> Gender.FEMALE.equals(person.gender));
 
-        System.out.println("The list contains only females: " + hasOnlyFemales);  // -> false
+        System.out.println("The list contains only females?: " + hasOnlyFemales);  // -> false
     }
 
     enum Gender {
         MALE, FEMALE, PREFER_NOT_TO_SAY
     }
 
-    static class Person {
-        private final String name;
-        private final Gender gender;
-
-        Person(String name, Gender gender) {
-            this.name = name;
-            this.gender = gender;
-        }
-
-        @Override
-        public String toString() {
-            return "Person{" + "name='" + name + '\'' +
-                    ", gender=" + gender +
-                    '}';
-        }
+    record Person(String name, Gender gender) {
     }
 }
