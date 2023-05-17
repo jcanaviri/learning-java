@@ -1,17 +1,15 @@
 package abstracclass;
 
-// Rectangle inherits from GeometricFigure
-// that means this class should implement the abstract methods
-
 @SuppressWarnings("unused")
-public class Rectangle extends GeometricFigure {
-    public final int a;
-    public final int b;
+public class Triangle extends GeometricFigure {
 
-    public Rectangle(String figureType, int a, int b) {
+    public final int b;
+    public final int h;
+
+    public Triangle(String figureType, int b, int h) {
         super(figureType);
-        this.a = a;
         this.b = b;
+        this.h = h;
     }
 
     @Override
@@ -21,11 +19,11 @@ public class Rectangle extends GeometricFigure {
 
     @Override
     public float getPerimeter() {
-        return (float) 2.0 * (this.a + this.b);
+        return (float) (this.b + this.h) / 2;
     }
 
     @Override
     public float getArea() {
-        return this.a * this.b;
+        return (float) 3.0 * this.b;
     }
 }
