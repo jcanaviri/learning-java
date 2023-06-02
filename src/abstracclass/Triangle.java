@@ -3,10 +3,10 @@ package abstracclass;
 @SuppressWarnings("unused")
 public class Triangle extends GeometricFigure {
 
-    public final int b;
-    public final int h;
+    public final float b;
+    public final float h;
 
-    public Triangle(String figureType, int b, int h) {
+    public Triangle(String figureType, float b, float h) {
         super(figureType);
         this.b = b;
         this.h = h;
@@ -19,11 +19,11 @@ public class Triangle extends GeometricFigure {
 
     @Override
     public float getPerimeter() {
-        return (float) (this.b + this.h) / 2;
+        return (this.b + this.h) / 2;
     }
 
     @Override
     public float getArea() {
-        return (float) 3.0 * this.b;
+        return 3.0 * this.b;
     }
 }

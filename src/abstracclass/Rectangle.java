@@ -21,7 +21,7 @@ public class Rectangle extends GeometricFigure {
 
     @Override
     public float getPerimeter() {
-        return (float) 2.0 * (this.a + this.b);
+        return (float) 2 * (this.a + this.b);
     }
 
     @Override
