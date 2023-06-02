@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
+        // Lists
         List<String> myList = new ArrayList<>();
         myList.add("Monday");
         myList.add("Tuesday");
@@ -13,16 +14,17 @@ public class Main {
 
         System.out.println("myList = " + myList);
 
+        // Sets
         Set<Integer> mySet = new HashSet<>();
         mySet.add(17);
         mySet.add(15);
         mySet.add(22);
         mySet.add(23);
-        // This code throws a warning
-        // because a set can only have unique values
+        // This code throws a warning 'cause a set can only have unique values
         // mySet.add(15);
         System.out.println("mySet = " + mySet);
 
+        // Maps
         Map<String, Integer> myMap = new HashMap<>();
         myMap.put("Bolivia", 1);
         myMap.put("Chile", 24);
