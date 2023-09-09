@@ -21,12 +21,12 @@ public class Arithmetic {
         System.out.println("result = " + result);
     }
 
-    // Aother method called add2
+    // Another method called add2
     public int add2() {
         return this.a + this.b;
     }
 
-    // Aother method called add3
+    // Another method called add3
     public int add3(int a, int b) {
         this.a = a;
         this.b = b;

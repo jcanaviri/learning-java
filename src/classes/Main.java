@@ -41,7 +41,7 @@ public class Main {
         System.out.println(john.lastName);
 
         // This will show the memory address of the object
-        // (e. g.) -> classes.Person@3feba861
+        // (e.g.) -> classes.Person@3feba861
         System.out.println(john);
     }
 

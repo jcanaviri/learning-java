@@ -24,6 +24,6 @@ public class Triangle extends GeometricFigure {
 
     @Override
     public float getArea() {
-        return 3.0 * this.b;
+        return (float) (3.0 * this.b);
     }
 }
