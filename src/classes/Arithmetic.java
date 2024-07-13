@@ -4,6 +4,15 @@ public class Arithmetic {
     int a;
     int b;
 
+    public Arithmetic() {
+        System.out.println("Executing the constructor...");
+    }
+
+    public Arithmetic(int a, int b) {
+        this.a = a;
+        this.b = b;
+    }
+
     public void add() {
         int result = this.a + this.b;
         System.out.println("result = " + result);

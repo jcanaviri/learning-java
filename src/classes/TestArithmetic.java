@@ -13,5 +13,8 @@ public class TestArithmetic {
 
         int anotherResult = arithmetic.addWithArguments(6, 2);
         System.out.println("anotherResult = " + anotherResult);
+
+        Arithmetic anotherArithmetic = new Arithmetic(4, 2);
+        anotherArithmetic.add();
     }
 }
